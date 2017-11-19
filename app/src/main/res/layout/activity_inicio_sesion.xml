@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Fondo2"
+    tools:context="com.example.erick.loginfirebasefinal.InicioSesion">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="Registro de Usuario"
+        android:textColor="@color/Blanco"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/editTextoEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:hint="Ingrese su Email"
+        android:inputType="textPersonName"
+        android:textColor="@color/Blanco"
+
+
+        android:textColorHint="@color/Blanco"
+        />
+
+    <EditText
+        android:id="@+id/editTextoContraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextoEmail"
+        android:layout_alignStart="@+id/editTextoEmail"
+        android:layout_below="@+id/editTextoEmail"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Ingrese su Contraseña"
+        android:inputType="textPersonName"
+        android:password="true"
+        android:textColorHint="@color/Blanco"
+        android:textColor="@color/Blanco"
+        />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextoContraseña"
+        android:layout_alignStart="@+id/editTextoContraseña"
+        android:layout_below="@+id/editTextoContraseña"
+        android:layout_marginTop="20dp"
+        android:onClick="Registrar"
+        android:text="Registrarse" />
+
+    <TextView
+        android:id="@+id/textViewirCrear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnRegistrar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:onClick="Registrar"
+        android:text="Aun no tiene una cuenta ? Consigue una Aqui!" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="49dp"
+        android:text="Huanuco-2017" />
+
+
+</RelativeLayout>
